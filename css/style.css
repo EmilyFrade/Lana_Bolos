@@ -1,0 +1,176 @@
+/* Navbar */
+.navbar{
+    height: 90px;
+    border-bottom: 10px var(--primary-color) solid;
+    background-color: var(--background-color);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover{
+    border-bottom: 3px var(--primary-color) solid;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.navbar img{
+    width: 170px;
+}
+
+/* Head index */
+.head h1{
+    font-size: 40px;
+}
+
+.head .grid{
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
+
+.head .slide, .head .size{
+    width: 400px;
+}
+
+.head p{
+    margin-bottom: 40px;
+}
+
+/* Head others */
+.others h2{
+    position: absolute;
+    color: var(--background-color);
+    font-size: 100px;
+}
+
+.others img{
+    width: 30%;
+    overflow: hidden;
+}
+
+/* Main */
+.main h1{
+    margin-top: 70px;
+    text-shadow: 0.2em 0.1em 0.2em var(--primary-color);
+}
+
+.main-text{
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.main .flex .button{
+    margin: 0px 10px;
+    width: 300px;
+}
+
+.main .portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.main .flex img{
+    height: 250px;
+    width: 200px;
+}
+
+.main .social{
+    color: var(--primary-color);
+}
+
+.main .social i{
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+
+.main .grid{
+    max-width: 1000px;
+    grid-template-columns: 65% 30%;
+    gap: 5%;
+    text-align: justify;
+}
+
+.main .grid img {
+    margin-top: 30%;
+}
+
+/* Main others */
+.others-main h2{
+    margin: 50px 0 10px;
+    text-shadow: 0.2em 0.1em 0.2em var(--primary-color);
+}
+
+.card{
+    border: var(--primary-color) 1px solid;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.others-main .grid{
+    grid-template-columns: 1fr 4fr;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.others-main .summary{
+    margin-top: 20px;
+    position: sticky;
+    top: 100px;
+}
+
+.others-main .summary a:hover{
+    color: var(--primary-color);
+}
+
+.others-main h3, .others-main p{
+    margin-bottom: 10px;
+    border-bottom: 1px #ccc solid;
+}
+
+.others-main nav li{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.others-main nav li:last-child{
+    margin-bottom: -10px;
+}
+
+.others-main p{
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.others-main .obs, .others-main p{
+    text-align: justify;
+}
+
+/* Footer */
+.footer{
+    margin-top: 50px;
+    padding-top: 30px;
+    background-color: var(--primary-color);
+}
+
+.footer .grid{
+    grid-template-columns: 70% 30%;
+}
+
+.footer .social a{
+    margin: 0 10px;
+}

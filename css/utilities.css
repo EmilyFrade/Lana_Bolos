@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Open+Sans:wght@300;400;500;700&display=swap');
+
+/* Base CSS */
+:root{
+    --background-color: #ffebeb;
+    --primary-color: #bc8f8f;
+    --color: #333;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Kalam", sans-serif;
+    line-height: 1.6;
+    background-color: #ffebeb;
+    color: var(--color);
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color);
+}
+
+h1, h2{
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p{
+    font-size: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+/* Utilities */
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.button{
+    border: var(--primary-color) 2px solid;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.button:hover{
+    transform: scale(0.98);
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.slide{
+    animation: slide 4s ease;
+}
+
+.size{
+    animation: size 4s ease;
+}
+
+/* Animations */
+@keyframes slide {
+    0%  {
+        transform: scale(0, 0) translateY(0);
+    }
+    
+    15%, 70% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+@keyframes size {
+    0%, 15%  {
+        transform: scale(1, 0);
+    }
+    
+    25%, 100% {
+        transform: scale(1, 1);
+    }
+}
+
+/* Media query */
+@media(max-width: 900px){
+    /* Head index */
+    .head h1{
+        font-size: 30px;
+    }
+
+    .head p{
+        font-size: 16px;
+    }
+
+    .head .slide, .head .size{
+        width: 300px;
+    }
+
+    /* Main */
+    .main .portfolio{
+        justify-content: space-around;
+    }
+
+    .main .grid{
+        grid-template-columns: 1fr;
+        gap: 0px;
+        justify-items: center;
+    }
+        
+    .main .grid img{
+        width: 300px;
+        margin: 10px 0;
+    }
+    
+    .others-main .grid{
+        grid-template-columns: 1fr 2.5fr;
+        gap: 20px;
+    }
+
+    /* Footer */
+    .footer{
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 700px){
+    /* Navbar */
+    .navbar{
+        margin-top: 10px;
+        height: 130px;
+    }
+
+    .navbar .flex{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(188, 143, 143, 0.1);
+    }
+
+    .navbar a:hover{
+        color: var(--primary-color);
+    }
+
+    /* Head */
+    .grid, .head .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .head h1{
+        font-size: 40px;
+    }
+
+    .head p{
+        font-size: 20px;
+    }
+
+    .others h2{
+        font-size: 60px;
+    }
+
+    /* Main */
+    .main .grid{
+        margin-top: -20px;
+    }
+
+    .others-main h2{
+        margin: 30px 0 10px;
+    }
+    
+    .others-main .grid{
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    
+    .others-main .summary{
+        margin-top: 10px;
+        position: static;
+    }
+
+    /* Footer */
+    .footer .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .footer{
+        justify-self: center;
+        text-align: center;
+    }
+
+    .footer h1{
+        margin-top: -20px;
+    }
+
+    .footer .social{
+        margin: -30px 0px 20px;
+    }
+}
+
+@media(max-width: 550px){
+    .main .flex{
+        flex-wrap: wrap;
+    }
+
+    .main .flex .button:first-child{
+        margin-bottom: 10px;
+    }
+
+    .main .container .portfolio{
+        padding: 0px;
+    }
+
+    .main .portfolio{
+        justify-content: space-around;
+        margin: 0px;
+    }
+    
+    .main .flex img{
+        height: 150px;
+        width: 100px;
+    }
+}
