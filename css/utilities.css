@@ -162,6 +162,7 @@ img{
     .navbar{
         margin-top: 10px;
         height: 130px;
+        overflow: hidden;
     }
 
     .navbar .flex{
@@ -257,5 +258,9 @@ img{
     .main .flex img{
         height: 150px;
         width: 100px;
+    }
+
+    p{
+        font-size: 16px;
     }
 }
