@@ -160,6 +160,13 @@
     text-align: justify;
 }
 
+.topper{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
 /* Footer */
 .footer{
     margin-top: 50px;
