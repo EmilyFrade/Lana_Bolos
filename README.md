@@ -21,7 +21,7 @@
 </p>
 
 <p>
-  Link para acesso da plataforma: <a href="https://lanabolos.netlify.app/">Plataforma Lana Bolos</a>
+  Link para acesso da plataforma: <a href="https://lanabolos.netlify.app/">Página de apresentação Lana Bolos</a>
 </p>
 
 ## Technologies
